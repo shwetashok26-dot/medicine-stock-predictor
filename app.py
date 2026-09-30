@@ -26,7 +26,7 @@ df = pd.read_csv(file) if file else SAMPLE.copy()
 if not file:
     st.info("Showing sample data. Upload your own CSV from the sidebar.")
 
-months = [c for c in df.columns if c.startswith("M")]
+   months = [c for c in df.columns if c.startswith("M") and c[1:].isdigit()]
 
 def forecast(row):
     y = row[months].astype(float).values
