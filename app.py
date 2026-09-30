@@ -8,7 +8,7 @@ st.caption("Predict which medicines will run out and get reorder alerts. Track 3
 
 SAMPLE = pd.DataFrame({
     "Medicine": ["Paracetamol", "Amoxicillin", "ORS Sachets", "Insulin", "Metformin", "Cetirizine", "Azithromycin", "Vitamin D3"],
-    "Stock": [900, 250, 400, 60, 700, 500, 180, 600],
+    "Stock": [900, 90, 120, 20, 700, 500, 95, 600],
     "Lead_Time_Days": [7, 10, 5, 14, 7, 7, 10, 7],
     "M1": [300, 120, 150, 30, 200, 90, 60, 100],
     "M2": [320, 140, 170, 32, 205, 95, 70, 105],
